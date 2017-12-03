@@ -1,0 +1,75 @@
+{
+  "extends": "airbnb-base",
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "experimentalObjectRestSpread": true
+  },
+  "env": {
+    "node": true
+  },
+  "ecmaFeatures": {
+    "experimentalObjectRestSpread": true
+  },
+  "plugins": [
+    "babel"
+  ],
+  "rules": {
+    "arrow-body-style": [
+      "error",
+      "as-needed"
+    ],
+    "comma-dangle": [
+      "error",
+      "always-multiline"
+    ],
+    "comma-spacing": "error",
+    "guard-for-in": "warn",
+    "import/no-dynamic-require": "off",
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "max-len": [
+      "error",
+      120
+    ],
+    "max-lines": [
+      "error",
+      {
+        "max": 500
+      }
+    ],
+    "no-await-in-loop": "off",
+    "no-mixed-operators": "off",
+    "no-multi-spaces": "error",
+    "no-plusplus": "off",
+    "no-continue": "off",
+    "no-restricted-syntax": [
+      "error",
+      "WithStatement",
+      "BinaryExpression[operator='in']"
+    ],
+    "no-trailing-spaces": "error",
+    "object-shorthand": [
+      "error",
+      "properties"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "spaced-comment": [
+      "error",
+      "always",
+      {
+        "block": {
+          "exceptions": [
+            "*"
+          ]
+        }
+      }
+    ],
+    "space-infix-ops": "error"
+  }
+}
